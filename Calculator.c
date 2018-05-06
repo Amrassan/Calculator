@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
+int main() 
 {
     int operationNum = 0;
     int acceptedAns = 0;
@@ -11,9 +11,9 @@ int main()
 
     puts("Welcome to the calculator program!\n"
            "1.Addition\t 2.Subtraction\t 3.Multiplication\t 4.Division\t 5.Modulus\n"
-           "Enter the operation number you would like to do: ");
+           "Enter the number of the operation you would like to perform: ");
            
-    do{           
+    do {           
         scanf("%d", &operationNum);
         
         if (operationNum >= 1 && operationNum <= 5)
@@ -26,7 +26,8 @@ int main()
         }
     } while (acceptedAns == 0);
 
-    switch(operationNum) {
+    switch(operationNum) 
+    {
         case 1:
             strcpy(operationName, "addition");
             break;
